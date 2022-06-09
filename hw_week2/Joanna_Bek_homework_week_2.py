@@ -95,9 +95,6 @@ print(total)
 
 # Question 8
 
-# Create an empty dictionary to store values for later
-items = {}
-
 # Request information from user
 Item_1_name = input('What is the name of the first item? ')
 Item_1_price = float(input("First items price: "))
