@@ -100,11 +100,11 @@ items = {}
 
 # Request information from user
 Item_1_name = input('What is the name of the first item? ')
-Item_1_price = float(input("First item's price: "))
+Item_1_price = float(input("First items price: "))
 Item_2_name = input('What is the name of the second item? ')
-Item_2_price = float(input("Second item's price: "))
+Item_2_price = float(input("Second items price: "))
 Item_3_name = input('What is the name of the third item? ')
-Item_3_price = float(input("Third item's price: "))
+Item_3_price = float(input("Third items price: "))
 
 # Add keys and values to the dictionary
 items = {Item_1_name: Item_1_price,
