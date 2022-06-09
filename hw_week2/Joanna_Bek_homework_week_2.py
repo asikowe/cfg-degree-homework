@@ -95,19 +95,13 @@ print(total)
 
 # Question 8
 
+# Create empty dictionary to store values later
+items = {}
+
 # Request information from user
-Item_1_name = input('What is the name of the first item? ')
-Item_1_price = float(input("First items price: "))
-Item_2_name = input('What is the name of the second item? ')
-Item_2_price = float(input("Second items price: "))
-Item_3_name = input('What is the name of the third item? ')
-Item_3_price = float(input("Third items price: "))
-
-# Add keys and values to the dictionary
-items = {Item_1_name: Item_1_price,
-        Item_2_name: Item_2_price,
-        Item_3_name: Item_3_price}
-
+for num in range(1,4):
+    items.update(dict({input(f'Item_{num}_name: '):float(input(f'Item_{num}_price: '))}))
+    
 # Define function
 def cashier_receipt(d):
     total_sum = 0
