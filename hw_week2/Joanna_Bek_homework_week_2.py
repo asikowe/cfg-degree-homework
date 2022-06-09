@@ -107,9 +107,9 @@ Item_3_name = input('What is the name of the third item? ')
 Item_3_price = float(input("Third item's price: "))
 
 # Add keys and values to the dictionary
-items[Item_1_name] = Item_1_price
-items[Item_2_name] = Item_2_price
-items[Item_3_name] = Item_3_price
+items = {Item_1_name: Item_1_price,
+        Item_2_name: Item_2_price,
+        Item_3_name: Item_3_price}
 
 # Define function
 def cashier_receipt(d):

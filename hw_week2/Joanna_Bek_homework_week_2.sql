@@ -8,9 +8,20 @@ ON sweet(item_name);
 
 select * from sweet where item_name like 'c%';
 
-use bank;
+-- Single indexes on many columns
+use bakery;
+
+CREATE INDEX alphabetical_sweets
+ON sweet(item_name);
+
+CREATE INDEX price_index
+ON sweet(price);
+
+select * from sweet where item_name LIKE "c%";
+select * from sweet where price > 0.5;
 
 -- Multi-column index & task 2
+use bank;
 
 select * from accounts;
 
