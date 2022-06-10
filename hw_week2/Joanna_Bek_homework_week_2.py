@@ -95,21 +95,19 @@ print(total)
 
 # Question 8
 
-# Create empty dictionary to store values later
-items = {}
-
-# Request information from user
-for num in range(1,4):
-    items.update(dict({input(f'Item_{num}_name: '):float(input(f'Item_{num}_price: '))}))
-    
 # Define function
-def cashier_receipt(d):
+def cashier_receipt():
+    # Create empty dictionary to store values later
+    items = {}
     total_sum = 0
-    for key in d:
-        print(key, d[key])
-        total_sum = total_sum + d[key]
-    print('TOTAL')
-    print(total_sum)
+    # Request user input for three items and update dictionary
+    for num in range(1,4):
+        items.update(dict({input(f'Item_{num}_name: '):float(input(f'Item_{num}_price: '))}))
+    # Count total and print the receipt
+    for key in items:
+        print(key, items[key])
+        total_sum += items[key]
+    print('TOTAL', total_sum)
 
-# Run the function with the input from user
-cashier_receipt(items)
+# Call function
+cashier_receipt()
