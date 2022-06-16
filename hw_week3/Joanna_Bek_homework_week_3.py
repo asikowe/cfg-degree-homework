@@ -1,10 +1,12 @@
 # TASK 1
 # QUESTION 1
 
-if input('Is it raining? y/n ') == 'y':
-    print("Take an umbrella")
-elif input('Is it raining? y/n ') == 'n':
-    print("You don't need an umbrella")
+is_raining = input('Is it raining? y/n ')
+
+if is_raining == 'y':
+    print("Take an umbrella.")
+elif is_raining == 'n':
+    print("You don't need an umbrella.")
 else:
     print("Invalid input")
 
@@ -143,7 +145,11 @@ with open('song.txt', 'r') as file:
 
 # print lines with word 'still' only
 with open('song.txt', 'r') as file:
-    [print(line.strip()) for line in file if 'still' in line]
+    [print(line.strip()) for line in file.readlines() if 'still' in line]
+
+# If we also wanted to include possibility of 'Still':
+with open('song.txt', 'r') as file:
+    [print(line.strip()) for line in file.readlines() if 'still' in line.lower()]
 
 # TASK 4
 # QUESTION 1
