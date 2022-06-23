@@ -23,4 +23,9 @@ Overall:
 AMAZING! Blown away by this. You've got such a good understanding of the fundamentals, lets get to the good stuff!
 68/70 - 97%
 
+### Week 3
+
+You've really got the hang of this weeks homework! Well done. There's some great code in here and your answers show you truly understand it too. See the comments because there's only a couple of minor things. Well done!
+59/65 - 91%
+
 ## Assessments
