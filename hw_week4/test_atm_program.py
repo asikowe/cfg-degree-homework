@@ -2,8 +2,8 @@
 
 import unittest
 from atm_program import validate_pin_length, validate_pin_char, \
-    validate_withdrawal_amount, validate_withdrawal_multiple
-
+    validate_withdrawal_amount, validate_withdrawal_multiple, pin_tries
+from unittest.mock import patch
 
 class TestAtmFunction(unittest.TestCase):
     def test_validate_pin_length_happy_path(self):
@@ -50,6 +50,11 @@ class TestAtmFunction(unittest.TestCase):
         self.assertEqual(
             str(exception_context.exception), 'Not a correct amount.')
 
+    @patch('atm_program.input', return_value='1111')
+    def test_pin_tries_happy_path(self, mock_input):
+        expected = '1111'
+        result = pin_tries()
+        self.assertEqual(expected, result)
 
 if __name__ == '__main__':
     unittest.main()

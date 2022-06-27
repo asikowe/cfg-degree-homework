@@ -114,4 +114,5 @@ def atm():
             print('Need a loan? Call us on: 111-222-333.')
 
 
-# atm()
+if __name__ == '__main__':
+    atm()

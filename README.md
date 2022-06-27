@@ -28,4 +28,9 @@ AMAZING! Blown away by this. You've got such a good understanding of the fundame
 You've really got the hang of this weeks homework! Well done. There's some great code in here and your answers show you truly understand it too. See the comments because there's only a couple of minor things. Well done!
 59/65 - 91%
 
+### Week 4
+
+Absolutely smashed it. Amazing git knowledge, great ATM code and cracking tests. I'd love to know how much refactoring you did as a result of the unittests and if you felt they were worth the effort. It's just a case of practicing patching and see the power of __name__ == '__main__'. Great work!
+39/43 - 91%
+
 ## Assessments
