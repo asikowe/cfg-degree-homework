@@ -1,0 +1,57 @@
+1. Python theory questions
+
+1. What is the program?
+Set of instructions for computer to perform.
+
+2. What is the process?
+Running instance of a program on a computer.
+
+3. What is Cache?
+It's a small memory storage space for storing functions and instructions that might be used by the program in the nearest future.
+
+4. What is Thread and Multithreading?
+Thread is a small set of instructions scheduled to perform by the central processing unit. Multithreading is the ability of running a few threads simultaneously.
+
+5. What is GIL in Python and how does it work?
+It is a lock (mutex) that will allow just one thread to run at a specific time. Might be causing problems for multithreading!
+
+6. What is Concurrency and Parallelism and what are the differences?
+Concurrency is running tasks in overlapping time (they don't run at the same time!). Parallelism is when multiple threads are running at the same time. Concurrency can be achieved on single core, whilst parallelism must include multiple cores.
+
+7. What do these stand for in programming: DRY, KISS, BDUF
+DRY: Don't Repeat Yourself, which a standard to prevent repetition of the code
+KISS: Keep It Simple Stupid: to prevent overcomplicating code
+BDUF: Big Design Up Front: approach to create a big, robust design first, before implementing it
+
+8. What is Garbage collector? How does it work?
+This is part of automated memory management in Python. Garbage Collector is triggered when object's reference counts gets to zero, so for example when it is reassigned, reference goes out of scope or is deleted.
+
+9. What are ‘deadlock’ and ‘livelock’ in a relational database?
+Deadlock occurs when two or more transactions can't achieve lock on required resources, because it is blocked by the other transition - and they stop performing any tasks. Livelock happens when two or more transactions try to get an exclusive lock on resource that is used by other transaction. They still continue to work and their status is constantly changing, but because they are not able to reach that required resources, they never complete the task.
+
+10. What is Flask and what can we use it for?
+Flask is a micro-web framework. Written in Python, it gives a lightweight option to create web based applications.
+
+2. Discuss the difference between Python 2 and Python 3
+There is quite a few differences between both version of Python. Some of them are: in Python 2 strings are stored as ASCII, in Python 3 as UNICODE. In Python 2 print is a statement, in Python 3, it is a function. The difference in division of two integers is also possible to notice: in Python 2 we get an integral value, in Python 3, a floating point value. Syntax of Python 3 is easier than Python 2. In Python 3 we have range() (that will return a list object), in Python 2 - xrange() (returning generator object). It's possible to port Python 2 into 3, but it's not possible to do that in reverse.
+
+
+5. Agile methodology, Scrum: name at least 3 types of meetings that are exercised by Agile teams and describe the objective of each meeting.
+a) Daily scrum: short meeting (around 10-15 minutes each day) to discuss and plan work for the day and identify any obstacles that can be encountered
+b) Sprint planning: meeting to discuss the next sprint, figuring out what can be achieved in it and ways to achieve goals
+c) product backlog refinement: usually performed by the Product Owner, who orders the tasks, makes sure team has clear objectives in achieving them, adds estimate to them. This is an ongoing process.
+
+6. Exception handling in Python, explain what each of the following blocks means in the program flow:
+
+Try: we will try to perform our operation by using our function
+
+except: in here we will consider what exceptions can be thrown our way (for example integer from user input when we are expecting a string) and tell the program what to do in that situation (raise an error, print useful user message etc.)
+
+else: if there was no error, we can continue with our code
+
+finally: code in this block will be executed by the program no matter what happened previously
+
+
+7. How can we connect a Python program (process) with a database? Explain how it works and how do we fetch / insert data into DB tables from a python program:
+We can do that by installing and importing mysql.connector library. This, after inputting the correct credentials from our database, will allow us to connect to it. Once we open the connection, we can call on cursor function. We then can create our query (between three quotation marks), similar to the ones we use in Workbench. We then execute this query via cursor. Next, we can use cursor.fetchall(), so that we can retrieve the data. It is important to close the cursor after the operation has been completed.
+To insert data, our query has to represent the inserting action (with specified column names and values going into them), and, after executing the query with the cursor, we have to commit it to the database.
