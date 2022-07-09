@@ -3,36 +3,39 @@
 # Write a function that can define whether a word is a Palindrome or not
 # (a word, phrase, or sequence that reads the same backwardsas forwards, e.g. madam)
 
-def palindrome_check(item):
-    return item == item[::-1]
+# def palindrome_check(item):
+#     return item == item[::-1]
 
-print(palindrome_check("madam"))
+# print(palindrome_check("madam"))
+# print(palindrome_check("hannah"))
+# print(palindrome_check("erm"))
+# print(palindrome_check("12321"))
 
 # TASK 4
 
 # Write tests for the newly created Palindrome function. Provide a brief explanation for your test case options.
 
-import unittest
+# import unittest
 
-class TestPalindromeCheckFunction(unittest.TestCase):
-    def test_palindrome_check_true(self):
-        expected = True
-        result = palindrome_check('madam')
-        self.assertEqual(expected, result)
+# class TestPalindromeCheckFunction(unittest.TestCase):
+#     def test_palindrome_check_true(self):
+#         expected = True
+#         result = palindrome_check('madam')
+#         self.assertEqual(expected, result)
 
-    def test_palindrome_check_false(self):
-        expected = False
-        result = palindrome_check('Joanna')
-        self.assertEqual(expected, result)
+#     def test_palindrome_check_false(self):
+#         expected = False
+#         result = palindrome_check('Joanna')
+#         self.assertEqual(expected, result)
 
-if __name__ == '__main__':
-    unittest.main()
+# if __name__ == '__main__':
+#     unittest.main()
 
-# Depending on the argument we pass to function, it will either return True or False statement. We want to make sure
-# it works correctly for both.
+# # Depending on the argument we pass to function, it will either return True or False statement. We want to make sure
+# # it works correctly for both.
 
 
-# TASK 9
+# # TASK 9
 
 def find_numbers(numbers, expected_sum):
     lookup = {}
@@ -48,3 +51,6 @@ my_numbers = [3, 5, -4, 8, 11, 1, -1, 6]
 target_sum = 10
 
 print(find_numbers(my_numbers, target_sum))
+print(find_numbers([1,2,3,4,5,6,7,8], 15))
+print(find_numbers([1,2,3,4,5,6,7,8], 16))
+print(find_numbers([1,2,3,4,5,6,7,8], 5))
