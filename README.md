@@ -33,4 +33,10 @@ You've really got the hang of this weeks homework! Well done. There's some great
 Absolutely smashed it. Amazing git knowledge, great ATM code and cracking tests. I'd love to know how much refactoring you did as a result of the unittests and if you felt they were worth the effort. It's just a case of practicing patching and see the power of __name__ == '__main__'. Great work!
 39/43 - 91%
 
+### Week 5-6
+
+Great answers and insights into how you'd go about designing systems end-to-end, it's great to see.
+
+45/53 - 85%
+
 ## Assessments
